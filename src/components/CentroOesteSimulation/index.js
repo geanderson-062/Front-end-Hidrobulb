@@ -71,7 +71,9 @@ function CentroOeste() {
       <h2 className="header center-align">Simulação da Região Centro Oeste</h2>
       <div className="row">
         <div className="col s12 center-align">
-          <SimulationButton handleSimulation={handleSimulation} />
+          {!soilTexture && (
+            <SimulationButton handleSimulation={handleSimulation} />
+          )}
         </div>
       </div>
       <ResultSimulation
