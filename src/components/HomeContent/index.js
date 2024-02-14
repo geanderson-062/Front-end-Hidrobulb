@@ -18,6 +18,11 @@ function BulboSimulacao() {
         </div>
         <div id="importancia">
           <h4>Importância das simulações</h4>
+          <img
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-i6UAfzuOpfCOpETJ8C3a57ngwYtW8qflZg&usqp=CAU"
+            alt="agua"
+            style={{ width: 350, height: 350 }}
+          />
           <div>
             <strong>Gestão da Irrigação:</strong>
             <p>
@@ -44,6 +49,11 @@ function BulboSimulacao() {
             </p>
           </div>
           <h4>Informações Necessárias para a Simulação</h4>
+          <img
+            src="https://sqm-vitas.com.br/wp-content/uploads/2020/11/30883A-8-formacao-bulbo.png"
+            alt="Bulbo"
+            style={{ width: 350, height: 350 }}
+          />
           <div>
             <strong>Propriedades do Solo: </strong>
             <p>
@@ -103,6 +113,11 @@ function BulboSimulacao() {
 
         <div id="simulacao">
           <h4>Configuração de Simulação no HYDRUS 3D</h4>
+          <img
+            src="https://www.pc-progress.com/Images/Pgm_Hydrus3D/MainPg_03.jpg"
+            alt="HYDRUS 3D"
+            style={{ width: 350, height: 350 }}
+          />
           <p>
             A simulação fornece informações detalhadas sobre os dados
             necessários para configurar uma simulação da camada superficial do
@@ -118,6 +133,11 @@ function BulboSimulacao() {
         </div>
         <div id="metodologia">
           <h4>Metodologia de Geração de Dados</h4>
+          <img
+            src="https://www.inf.ufsc.br/~andre.zibetti/probabilidade/figures/norm1-1.png"
+            alt="Gaussiana"
+            style={{ width: 350, height: 350 }}
+          />
           <p>
             A simulação utiliza uma metodologia baseada na distribuição normal
             (Gaussiana) para gerar parâmetros climáticos realistas ao longo do
@@ -130,6 +150,11 @@ function BulboSimulacao() {
 
         <div id="regioes">
           <h4>Simulação de Regiões no Brasil</h4>
+          <img
+            src="https://static.todamateria.com.br/upload/52/40/524057d4384e8-regioes-brasileiras.jpg"
+            alt="Regiões do brasil"
+            style={{ width: 350, height: 350 }}
+          />
           <p>
             A metodologia é adaptada para simular as condições climáticas e
             hidrológicas de diferentes regiões no Brasil, levando em
