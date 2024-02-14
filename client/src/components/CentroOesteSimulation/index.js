@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { fetchData } from "../../service/BulboSuperficial_backend";
 import "materialize-css/dist/css/materialize.min.css";
+import SimulationButton from "../ButtonSimulation";
 
 function CentroOeste() {
   const [soilTexture, setSoilTexture] = useState(null);
@@ -77,12 +78,7 @@ function CentroOeste() {
       <h2 className="header center-align">Simulação da Região Centro Oeste</h2>
       <div className="row">
         <div className="col s12 center-align">
-          <button
-            className="btn waves-effect waves-light blue"
-            onClick={handleSimulation}
-          >
-            Iniciar Simulação
-          </button>
+          <SimulationButton handleSimulation={handleSimulation} />
         </div>
       </div>
 
