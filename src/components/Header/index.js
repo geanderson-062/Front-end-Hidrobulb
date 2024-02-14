@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
 
 import React from "react";
+import { Link } from "react-router-dom";
 
 function Header() {
   return (
@@ -11,10 +12,10 @@ function Header() {
         </a>
         <ul id="nav-mobile" className="left hide-on-med-and-down">
           <li>
-            <a href="sass.html">Inicio</a>
+            <Link to="/">Inicio</Link>
           </li>
           <li>
-            <a href="badges.html">Simulações</a>
+            <Link to="/simulacoes">Simulações</Link>
           </li>
         </ul>
       </div>

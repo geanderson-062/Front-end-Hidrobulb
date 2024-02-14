@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { fetchData } from "../../service/BulboSuperficial_backend";
+import { fetchData } from "../../services/BulboSuperficial_backend";
 import SimulationButton from "../ButtonSimulation";
 import ResultSimulation from "../ResultSimulation";
 
