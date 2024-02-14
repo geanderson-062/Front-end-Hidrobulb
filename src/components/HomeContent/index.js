@@ -162,8 +162,11 @@ function BulboSimulacao() {
             país. Isso inclui a consideração de fatores como o clima tropical
             predominante em grande parte do território, as características
             específicas das regiões Norte, Nordeste, Centro-Oeste, Sudeste e
-            Sul, e a influência de eventos climáticos como o El Niño e La Niña.
-            Ao ajustar os parâmetros da simulação de acordo com as
+            Sul, e a influência de eventos climáticos como o{" "}
+            <a href="https://mundoeducacao.uol.com.br/geografia/el-nino-la-nina.htm">
+              El Niño e La Niña
+            </a>
+            . Ao ajustar os parâmetros da simulação de acordo com as
             características regionais do Brasil, os resultados obtidos são mais
             precisos e aplicáveis às condições reais encontradas no país,
             contribuindo para uma melhor compreensão dos processos hidrológicos
