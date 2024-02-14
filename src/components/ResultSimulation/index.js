@@ -22,84 +22,84 @@ function ResultSimulation({
   drainage,
 }) {
   return (
-    <>
-      <div style={{ marginTop: "50px" }}>
-        {soilTexture && (
-          <div className="row">
-            <div className="col s12">
-              <h3>Propriedades do Solo</h3>
-              <p>Textura do Solo: {soilTexture}</p>
-              <p>Condutividade Hidráulica: {hydraulicConductivity}</p>
-              <p>Porosidade: {porosity}</p>
-              <p>Capacidade de Campo: {fieldCapacity}</p>
-              <p>Ponto de Murcha Permanente: {wiltingPoint}</p>
-            </div>
+    <div style={{ marginTop: "50px" }}>
+      {soilTexture && (
+        <div className="card green darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">Propriedades do Solo</span>
+            <p>Textura do Solo: {soilTexture}</p>
+            <p>Condutividade Hidráulica: {hydraulicConductivity}</p>
+            <p>Porosidade: {porosity}</p>
+            <p>Capacidade de Campo: {fieldCapacity}</p>
+            <p>Ponto de Murcha Permanente: {wiltingPoint}</p>
           </div>
-        )}
+        </div>
+      )}
 
-        {initialMoisture && (
-          <div className="row">
-            <div className="col s12">
-              <h3>Condições Iniciais</h3>
-              <p>Umidade Inicial: {initialMoisture}</p>
-              <p>Concentração Inicial de Solutos: {soluteConcentration}</p>
-            </div>
+      {initialMoisture && (
+        <div className="card green darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">Condições Iniciais</span>
+            <p>Umidade Inicial: {initialMoisture}</p>
+            <p>Concentração Inicial de Solutos: {soluteConcentration}</p>
           </div>
-        )}
+        </div>
+      )}
 
-        {surfaceWaterFlow && (
-          <div className="row">
-            <div className="col s12">
-              <h3>Condições de Contorno</h3>
-              <p>Fluxo de Água na Superfície do Solo: {surfaceWaterFlow}</p>
-              <p>Taxa de Evaporação: {evaporationRate}</p>
-              <p>Precipitação: {precipitation}</p>
-            </div>
+      {surfaceWaterFlow && (
+        <div className="card green darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">Condições de Contorno</span>
+            <p>Fluxo de Água na Superfície do Solo: {surfaceWaterFlow}</p>
+            <p>Taxa de Evaporação: {evaporationRate}</p>
+            <p>Precipitação: {precipitation}</p>
           </div>
-        )}
+        </div>
+      )}
 
-        {temperature && (
-          <div className="row">
-            <div className="col s12">
-              <h3>Parâmetros Climáticos</h3>
-              <p>Temperatura: {temperature}</p>
-              <p>Umidade Relativa: {humidity}</p>
-              <p>Velocidade do Vento: {windSpeed}</p>
-              <p>Radiação Solar: {radiation}</p>
-            </div>
+      {temperature && (
+        <div className="card green darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">Parâmetros Climáticos</span>
+            <p>Temperatura: {temperature}</p>
+            <p>Umidade Relativa: {humidity}</p>
+            <p>Velocidade do Vento: {windSpeed}</p>
+            <p>Radiação Solar: {radiation}</p>
           </div>
-        )}
+        </div>
+      )}
 
-        {surfaceArea && (
-          <div className="row">
-            <div className="col s12">
-              <h3>Geometria do Domínio</h3>
-              <p>Área da Superfície do Solo: {surfaceArea}</p>
-              <p>Espessura do Solo: {soilThickness}</p>
-            </div>
+      {surfaceArea && (
+        <div className="card green darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">Geometria do Domínio</span>
+            <p>Área da Superfície do Solo: {surfaceArea}</p>
+            <p>Espessura do Solo: {soilThickness}</p>
           </div>
-        )}
+        </div>
+      )}
 
-        {timeInterval && (
-          <div className="row">
-            <div className="col s12">
-              <h3>Intervalo de Tempo</h3>
-              <p>Intervalo de Tempo para a Simulação: {timeInterval}</p>
-            </div>
+      {timeInterval && (
+        <div className="card green darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">Intervalo de Tempo</span>
+            <p>Intervalo de Tempo para a Simulação: {timeInterval}</p>
           </div>
-        )}
+        </div>
+      )}
 
-        {saturation && (
-          <div className="row">
-            <div className="col s12">
-              <h3>Condições de Saturação e Drenagem</h3>
-              <p>Estado de Saturação do Solo: {saturation}</p>
-              <p>Tipo de Drenagem: {drainage}</p>
-            </div>
+      {saturation && (
+        <div className="card green darken-1">
+          <div className="card-content white-text">
+            <span className="card-title">
+              Condições de Saturação e Drenagem
+            </span>
+            <p>Estado de Saturação do Solo: {saturation}</p>
+            <p>Tipo de Drenagem: {drainage}</p>
           </div>
-        )}
-      </div>
-    </>
+        </div>
+      )}
+    </div>
   );
 }
 
