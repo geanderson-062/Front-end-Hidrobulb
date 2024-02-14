@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { fetchData } from "../../service/BulboSuperficial_backend";
-import "materialize-css/dist/css/materialize.min.css";
 import SimulationButton from "../ButtonSimulation";
 import ResultSimulation from "../ResultSimulation";
 
