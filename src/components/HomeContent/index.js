@@ -6,7 +6,7 @@ function BulboSimulacao() {
     <>
       <section className="container" id="container">
         <div id="introducao">
-          <h4>Simulação do Bulbo em Camada Superficial</h4>
+          <h4>Introdução a Simulação do Bulbo em Camada Superficial</h4>
           <p>
             A Simulação do Bulbo em Camada Superficial é uma técnica avançada
             que visa modelar a dinâmica da água na superfície do solo. Ao
@@ -19,9 +19,8 @@ function BulboSimulacao() {
         <div id="importancia">
           <h4>Importância das simulações</h4>
           <img
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-i6UAfzuOpfCOpETJ8C3a57ngwYtW8qflZg&usqp=CAU"
+            src="https://agrosmart.com.br/blog/wp-content/uploads/2022/05/pivo-irrigacao.png"
             alt="agua"
-            style={{ width: 350, height: 350 }}
           />
           <div>
             <strong>Gestão da Irrigação:</strong>
@@ -52,7 +51,6 @@ function BulboSimulacao() {
           <img
             src="https://sqm-vitas.com.br/wp-content/uploads/2020/11/30883A-8-formacao-bulbo.png"
             alt="Bulbo"
-            style={{ width: 350, height: 350 }}
           />
           <div>
             <strong>Propriedades do Solo: </strong>
@@ -116,7 +114,6 @@ function BulboSimulacao() {
           <img
             src="https://www.pc-progress.com/Images/Pgm_Hydrus3D/MainPg_03.jpg"
             alt="HYDRUS 3D"
-            style={{ width: 350, height: 350 }}
           />
           <p>
             A simulação fornece informações detalhadas sobre os dados
@@ -136,7 +133,6 @@ function BulboSimulacao() {
           <img
             src="https://www.inf.ufsc.br/~andre.zibetti/probabilidade/figures/norm1-1.png"
             alt="Gaussiana"
-            style={{ width: 350, height: 350 }}
           />
           <p>
             A simulação utiliza uma metodologia baseada na distribuição normal
@@ -153,7 +149,6 @@ function BulboSimulacao() {
           <img
             src="https://static.todamateria.com.br/upload/52/40/524057d4384e8-regioes-brasileiras.jpg"
             alt="Regiões do brasil"
-            style={{ width: 350, height: 350 }}
           />
           <p>
             A metodologia é adaptada para simular as condições climáticas e
