@@ -6,6 +6,7 @@ import Home from "./pages/Home";
 import Simulacoes from "./pages/Simulacoes";
 import Header from "./components/Header";
 import Footer from "./components/Footer";
+import LoadingView from "./components/LoadingView";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           </Routes>
         </div>
         <Footer />
+        <LoadingView />
       </div>
     </Router>
   );
