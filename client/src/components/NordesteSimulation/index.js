@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import { fetchData } from "./service/BulboSuperficial_backend"; // Importe a função fetchData
-import "materialize-css/dist/css/materialize.min.css"; // Importe o arquivo CSS do Materialize
+import { fetchData } from "../../service/BulboSuperficial_backend";
+import "materialize-css/dist/css/materialize.min.css";
 
 function Nordeste() {
   const [soilTexture, setSoilTexture] = useState(null);
@@ -70,7 +70,7 @@ function Nordeste() {
 
   return (
     <div className="container">
-      <h2 className="header center-align">Simulação do Bulbo Úmido</h2>
+      <h2 className="header center-align">Simulação da Região Nordeste</h2>
       <div className="row">
         <div className="col s12 center-align">
           <button
