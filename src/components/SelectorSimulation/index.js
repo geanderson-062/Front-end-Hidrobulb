@@ -11,7 +11,7 @@ function SelectorSimulation() {
 
   return (
     <>
-      <div className="container" id="container">
+      <div id="container">
         <h4 className="header center-align">
           Simulação do Bulbo Úmido Em camada Superfical
         </h4>

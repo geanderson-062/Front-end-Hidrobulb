@@ -6,10 +6,10 @@ import { Link } from "react-router-dom";
 function Header() {
   return (
     <nav>
-      <div className="nav-wrapper">
-        <a href="#" className="brand-logo center">
-          Logo
-        </a>
+      <div className="nav-wrapper green">
+        <Link to="/" className="brand-logo center">
+          Superficial Wet Bulb
+        </Link>
         <ul id="nav-mobile" className="left hide-on-med-and-down">
           <li>
             <Link to="/">Inicio</Link>
