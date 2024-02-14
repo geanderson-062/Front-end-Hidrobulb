@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "./style.css";
 import SimulacaoNorte from "../NorteSimulation";
 import SimulacaoNordeste from "../NordesteSimulation";
 import SimulacaoCentroOeste from "../CentroOesteSimulation";
@@ -10,12 +11,13 @@ function SelectorSimulation() {
 
   return (
     <>
-      <div className="container">
-        <h3 className="header center-align">
+      <div className="container" id="container">
+        <h4 className="header center-align">
           Simulação do Bulbo Úmido Em camada Superfical
-        </h3>
+        </h4>
         <div className="input-field col s12">
           <select
+            id="selector"
             className="browser-default"
             value={selectedComponent}
             onChange={(e) => setSelectedComponent(e.target.value)}
