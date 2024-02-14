@@ -3,7 +3,7 @@ import React from "react";
 function SimulationButton({ handleSimulation }) {
   return (
     <button
-      className="btn waves-effect waves-light blue"
+      className="btn waves-effect waves-light green"
       onClick={handleSimulation}
     >
       Iniciar Simulação do Bulbo

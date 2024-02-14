@@ -1,11 +1,11 @@
 import React from "react";
+import BulboSimulacao from "../components/HomeContent";
 
 function Home() {
   return (
-    <div>
-      <h2>Bem-vindo à Página Inicial</h2>
-      <p>Esta é a página inicial do seu aplicativo.</p>
-    </div>
+    <>
+      <BulboSimulacao />
+    </>
   );
 }
 
