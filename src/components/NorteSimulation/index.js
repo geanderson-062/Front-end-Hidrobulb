@@ -34,18 +34,11 @@ function Norte() {
       const timeIntervalData = await fetchData("/time_interval/");
       const saturationDrainage = await fetchData("/saturation_drainage/norte");
 
-      const {
-        texture,
-        hydraulic_conductivity,
-        porosity,
-        field_capacity,
-        wilting_point,
-      } = soilProperties;
-      setSoilTexture(texture);
-      setHydraulicConductivity(hydraulic_conductivity);
-      setPorosity(porosity);
-      setFieldCapacity(field_capacity);
-      setWiltingPoint(wilting_point);
+      setSoilTexture(soilProperties.soil_texture);
+      setHydraulicConductivity(soilProperties.hydraulic_conductivity);
+      setPorosity(soilProperties.porosity);
+      setFieldCapacity(soilProperties.field_capacity);
+      setWiltingPoint(soilProperties.wilting_point);
       setInitialMoisture(initialConditions.initial_moisture);
       setSoluteConcentration(initialConditions.solute_concentration);
       setSurfaceWaterFlow(boundaryConditions.surface_water_flow);
