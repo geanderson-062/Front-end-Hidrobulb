@@ -1,70 +1,52 @@
-# Getting Started with Create React App
+# Simulador de Camada Superficial do Bulbo Úmido
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Este é o frontend de uma aplicação que interage com uma API para fornecer aos usuários os dados e informações necessários para configurar simulações da camada superficial do bulbo úmido. A API simplifica o processo de obtenção e integração de dados essenciais para a execução de simulações hidrológicas.
 
-## Available Scripts
+## Tecnologias Utilizadas
 
-In the project directory, you can run:
+- React: Utilizado para construir a interface de usuário.
+- React Router: Utilizado para a navegação entre diferentes páginas da aplicação.
+- Materialize CSS: Framework CSS utilizado para estilizar a aplicação.
+- Axios (ou outro cliente HTTP): Pode ser utilizado para realizar requisições à API.
 
-### `npm start`
+## Configuração
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Antes de executar a aplicação, é necessário configurar o ambiente. Certifique-se de que Node.js e npm estão instalados em sua máquina. Em seguida, siga estes passos:
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+1. Clone o repositório para o seu ambiente local.
+2. Navegue até o diretório do projeto.
+3. Execute o comando `npm install` para instalar as dependências.
+4. Após a instalação, execute o comando `npm start` para iniciar o servidor de desenvolvimento.
+5. Acesse a aplicação através do navegador no endereço `http://localhost:3000`.
 
-### `npm test`
+## Estrutura do Projeto
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+A estrutura do projeto é organizada da seguinte forma:
 
-### `npm run build`
+- `src/`: Contém o código-fonte da aplicação.
+  - `assets/`: Contém arquivos estáticos, como imagens e estilos CSS.
+  - `components/`: Contém os componentes reutilizáveis da aplicação, como cabeçalho, rodapé e visualizações de carregamento.
+  - `pages/`: Contém as páginas principais da aplicação, como a página inicial e a página de simulações.
+  - `App.js`: Arquivo principal que define a estrutura da aplicação e as rotas.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## API
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+A API utilizada por este frontend está disponível em [API de simulação do Bulbo em camada superficial](https://github.com/geanderson-062/API-de-simulacao-do-Bulbo-em-camada-superficial). Certifique-se de configurar e executar a API para que o frontend possa interagir corretamente com ela.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Contribuindo
 
-### `npm run eject`
+Contribuições são bem-vindas! Se você deseja contribuir para este projeto, siga estes passos:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+1. Fork este repositório.
+2. Crie uma branch com uma descrição clara da sua alteração (`git checkout -b feature/sua-feature`).
+3. Faça suas alterações e comite-as (`git commit -am 'Adiciona nova funcionalidade'`).
+4. Faça o push para a branch (`git push origin feature/sua-feature`).
+5. Abra um pull request explicando suas alterações.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Licença
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Este projeto está licenciado sob a MIT License - veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+---
 
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Agora o README inclui um link direto para o repositório da API, permitindo fácil acesso para quem estiver interessado em explorar ou contribuir com ela.
