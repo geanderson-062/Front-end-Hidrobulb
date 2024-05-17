@@ -7,7 +7,7 @@ function BulboSimulacao() {
   useEffect(() => {
     const sr = ScrollReveal();
     sr.reveal(
-      "#intro,#introducao, #importancia0, #importancia1, #importancia2, #importancia3, #simulacao4, #importancia5, #importancia6, #importancia7 , #importancia8 , #importancia9, #metodologia, #regioes",
+      "#intro,#introducao, #importancia0, #importancia1, #importancia2 ,#importancia3, #importancia4, #importancia5, #importancia6, #importancia7 , #importancia8 , #importancia9,#simulacao, #metodologia, #regioes, #imagem0,#imagem1,#imagem2,#imagem3,#imagem4",
       {
         delay: 0, // Atraso antes da animação começar em milissegundos
         duration: 1000, // Duração da animação em milissegundos
@@ -32,7 +32,6 @@ function BulboSimulacao() {
             simulações de Bulbo Úmido em Camada Superficial.
           </p>
         </div>
-
         <div id="introducao">
           <h4>Introdução a Simulação do Bulbo em Camada Superficial</h4>
           <p>
@@ -53,13 +52,15 @@ function BulboSimulacao() {
             recursos hídricos.
           </p>
         </div>
-        <div id="importancia0">
-          <h4>Importância das simulações</h4>
-          <img
-            src="https://agrosmart.com.br/blog/wp-content/uploads/2022/05/pivo-irrigacao.png"
-            alt="agua"
-          />
-          <div>
+        <div>
+          <div id="imagem0">
+            <h4>Importância das simulações</h4>
+            <img
+              src="https://agrosmart.com.br/blog/wp-content/uploads/2022/05/pivo-irrigacao.png"
+              alt="agua"
+            />
+          </div>
+          <div id="importancia0">
             <strong>Gestão da Irrigação:</strong>
             <p>
               Ao entender como a água se move no solo, os agricultores podem
@@ -89,11 +90,13 @@ function BulboSimulacao() {
             </p>
           </div>
         </div>
-        <h4>Informações Necessárias para a Simulação</h4>
-        <img
-          src="https://sqm-vitas.com.br/wp-content/uploads/2020/11/30883A-8-formacao-bulbo.png"
-          alt="Bulbo"
-        />
+        <div id="imagem1">
+          <h4>Informações Necessárias para a Simulação</h4>
+          <img
+            src="https://sqm-vitas.com.br/wp-content/uploads/2020/11/30883A-8-formacao-bulbo.png"
+            alt="Bulbo"
+          />
+        </div>
         <div>
           <div id="importancia3">
             <strong>Propriedades do Solo: </strong>
@@ -163,65 +166,75 @@ function BulboSimulacao() {
             </p>
           </div>
         </div>
-
-        <div id="simulacao">
-          <h4>Configuração de Simulação no HYDRUS 3D</h4>
-          <img
-            src="https://www.pc-progress.com/Images/Pgm_Hydrus3D/MainPg_03.jpg"
-            alt="HYDRUS 3D"
-          />
-          <p>
-            A simulação fornece informações detalhadas sobre os dados
-            necessários para configurar uma simulação da camada superficial do
-            bulbo úmido no software{" "}
-            <a href="https://www.pc-progress.com/en/Default.aspx?hydrus">
-              HYDRUS 3D
-            </a>{" "}
-            . Ao integrar esses dados, os usuários podem realizar simulações
-            precisas e detalhadas, analisando como fatores como propriedades do
-            solo, condições climáticas e geometria do domínio influenciam a
-            distribuição e movimentação da água no solo.
-          </p>
+        <div>
+          <div id="imagem2">
+            <h4>Configuração de Simulação no HYDRUS 3D</h4>
+            <img
+              src="https://www.pc-progress.com/Images/Pgm_Hydrus3D/MainPg_03.jpg"
+              alt="HYDRUS 3D"
+            />
+          </div>
+          <div id="simulacao">
+            <p>
+              A simulação fornece informações detalhadas sobre os dados
+              necessários para configurar uma simulação da camada superficial do
+              bulbo úmido no software{" "}
+              <a href="https://www.pc-progress.com/en/Default.aspx?hydrus">
+                HYDRUS 3D
+              </a>{" "}
+              . Ao integrar esses dados, os usuários podem realizar simulações
+              precisas e detalhadas, analisando como fatores como propriedades
+              do solo, condições climáticas e geometria do domínio influenciam a
+              distribuição e movimentação da água no solo.
+            </p>
+          </div>
         </div>
-        <div id="metodologia">
-          <h4>Metodologia de Geração de Dados</h4>
-          <img
-            src="https://www.inf.ufsc.br/~andre.zibetti/probabilidade/figures/norm1-1.png"
-            alt="Gaussiana"
-          />
-          <p>
-            A simulação utiliza uma metodologia baseada na distribuição normal
-            (Gaussiana) para gerar parâmetros climáticos realistas ao longo do
-            tempo e espaço. Essa abordagem garante que a simulação seja
-            consistente com as características climáticas observadas na região
-            específica da simulação, fornecendo resultados confiáveis e
-            relevantes para análise e tomada de decisões.
-          </p>
+        <div>
+          <div id="imagem3">
+            <h4>Metodologia de Geração de Dados</h4>
+            <img
+              src="https://www.inf.ufsc.br/~andre.zibetti/probabilidade/figures/norm1-1.png"
+              alt="Gaussiana"
+            />
+          </div>
+          <div id="metodologia">
+            <p>
+              A simulação utiliza uma metodologia baseada na distribuição normal
+              (Gaussiana) para gerar parâmetros climáticos realistas ao longo do
+              tempo e espaço. Essa abordagem garante que a simulação seja
+              consistente com as características climáticas observadas na região
+              específica da simulação, fornecendo resultados confiáveis e
+              relevantes para análise e tomada de decisões.
+            </p>
+          </div>
         </div>
-
-        <div id="regioes">
-          <h4>Simulação de Regiões no Brasil</h4>
-          <img
-            src="https://static.todamateria.com.br/upload/52/40/524057d4384e8-regioes-brasileiras.jpg"
-            alt="Regiões do brasil"
-          />
-          <p>
-            A metodologia é adaptada para simular as condições climáticas e
-            hidrológicas de diferentes regiões no Brasil, levando em
-            consideração as variações geográficas e climáticas presentes no
-            país. Isso inclui a consideração de fatores como o clima tropical
-            predominante em grande parte do território, as características
-            específicas das regiões Norte, Nordeste, Centro-Oeste, Sudeste e
-            Sul, e a influência de eventos climáticos como o{" "}
-            <a href="https://mundoeducacao.uol.com.br/geografia/el-nino-la-nina.htm">
-              El Niño e La Niña
-            </a>
-            . Ao ajustar os parâmetros da simulação de acordo com as
-            características regionais do Brasil, os resultados obtidos são mais
-            precisos e aplicáveis às condições reais encontradas no país,
-            contribuindo para uma melhor compreensão dos processos hidrológicos
-            e uma gestão mais eficaz dos recursos hídricos.
-          </p>
+        <div>
+          <div id="imagem4">
+            <h4>Simulação de Regiões no Brasil</h4>
+            <img
+              src="https://static.todamateria.com.br/upload/52/40/524057d4384e8-regioes-brasileiras.jpg"
+              alt="Regiões do brasil"
+            />
+          </div>
+          <div id="regioes">
+            <p>
+              A metodologia é adaptada para simular as condições climáticas e
+              hidrológicas de diferentes regiões no Brasil, levando em
+              consideração as variações geográficas e climáticas presentes no
+              país. Isso inclui a consideração de fatores como o clima tropical
+              predominante em grande parte do território, as características
+              específicas das regiões Norte, Nordeste, Centro-Oeste, Sudeste e
+              Sul, e a influência de eventos climáticos como o{" "}
+              <a href="https://mundoeducacao.uol.com.br/geografia/el-nino-la-nina.htm">
+                El Niño e La Niña
+              </a>
+              . Ao ajustar os parâmetros da simulação de acordo com as
+              características regionais do Brasil, os resultados obtidos são
+              mais precisos e aplicáveis às condições reais encontradas no país,
+              contribuindo para uma melhor compreensão dos processos
+              hidrológicos e uma gestão mais eficaz dos recursos hídricos.
+            </p>
+          </div>
         </div>
       </section>
     </>
