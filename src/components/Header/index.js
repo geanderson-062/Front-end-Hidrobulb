@@ -8,7 +8,7 @@ function Header() {
     <nav>
       <div className="nav-wrapper green">
         <Link to="/" className="brand-logo center">
-          Superficial Wet Bulb
+          HydroBulb
         </Link>
         <ul id="nav-mobile" className="left hide-on-med-and-down">
           <li>

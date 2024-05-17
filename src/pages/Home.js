@@ -20,8 +20,8 @@ function Home() {
         <div style={{ textAlign: "center", marginTop: "50px" }}>
           <h5>Realize Simulações do Bulbo Úmido em Camada Superficial</h5>
           <p>
-            Leia o conteúdo abaixo para saber mais sobre Bulbo Úmido em Camada
-            Superficial
+            Leia o conteúdo abaixo para saber mais informações sobre simulações
+            de Bulbo Úmido em Camada Superficial.
           </p>
         </div>
         <RedirectButton />

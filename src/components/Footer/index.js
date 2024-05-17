@@ -9,7 +9,7 @@ function Footer() {
       <div className="container">
         <div className="row">
           <div className="col l6 s12">
-            <h5 className="white-text">Superficial Wet Bulb</h5>
+            <h5 className="white-text">Contribuições</h5>
             <p className="grey-text text-lighten-4">
               Contribuições são bem-vindas! Se você encontrar algum problema ou
               tiver sugestões para melhorar esta Aplicação, sinta-se à vontade
@@ -50,7 +50,7 @@ function Footer() {
       </div>
       <div className="footer-copyright">
         <div className="container">
-          &copy; {currentYear} Superficial Wet Bulb
+          &copy; {currentYear} HydroBulb
           <a
             className="grey-text text-lighten-4 right"
             href="https://documenter.getpostman.com/view/28383339/2sA2r3YRBz"
