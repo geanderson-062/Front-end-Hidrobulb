@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { fetchData } from "../../services/BulboSuperficial_backend";
-import SimulationButton from "../ButtonSimulation";
+import SimulationButton from "../Buttons/ButtonSimulation";
 import ResultSimulation from "../ResultSimulation";
-import DownloadButton from "../ButtonDowload";
+import DownloadButton from "../Buttons/ButtonDowload";
 
 function Nordeste() {
   const [soilTexture, setSoilTexture] = useState(null);

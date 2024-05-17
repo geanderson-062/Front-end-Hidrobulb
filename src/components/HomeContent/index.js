@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import RedirectButton from "../ButtonRedirect";
+import RedirectButton from "../Buttons/ButtonRedirect";
 import "./style.css";
 
 function BulboSimulacao() {
