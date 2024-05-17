@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
-import JustificativaText from "../components/JustificativaText";
+import JustificativaText from "../components/Text/JustificativaText";
 
 function Home() {
   useEffect(() => {

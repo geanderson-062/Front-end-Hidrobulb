@@ -22,7 +22,7 @@ function ResultSimulation({
   drainage,
 }) {
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ marginTop: 50, marginBottom: 50 }}>
       {soilTexture && (
         <div className="card green darken-1">
           <div className="card-content white-text">

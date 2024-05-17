@@ -11,9 +11,8 @@
 a{
   text-decoration: none;
 }
-#SimulacoesSontainer {
- 
-  height: 500px;
+#SimulacoesContainer {
+  height: 1600px;
   margin-left: 20px;
   margin-right: 20px;
 }
