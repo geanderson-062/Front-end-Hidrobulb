@@ -28,17 +28,17 @@ function BulboSimulacao() {
             ponto de emissão de água, como um gotejador em um sistema de
             irrigação por gotejamento. Esta região é chamada de “bulbo” devido à
             sua forma esférica ou ovalada que se forma devido à movimentação da
-            água através do solo1. A água se move para fora do ponto de emissão
+            água através do solo. A água se move para fora do ponto de emissão
             em todas as direções, criando uma zona úmida que se assemelha a um
             bulbo. A forma e o tamanho do bulbo úmido podem variar dependendo de
             vários fatores, incluindo as propriedades do solo (como a textura e
             a condutividade hidráulica), a taxa de aplicação de água e o tempo
-            de irrigação1. A simulação do bulbo úmido em camada superficial é
-            uma técnica avançada que visa modelar a dinâmica da água na
-            superfície do solo. Ao analisar como a água é distribuída e
-            movimentada na camada superficial do solo, essa simulação desempenha
-            um papel crucial na compreensão dos processos hidrológicos e na
-            gestão dos recursos hídricos1.
+            de irrigação. A simulação do bulbo úmido em camada superficial é uma
+            técnica avançada que visa modelar a dinâmica da água na superfície
+            do solo. Ao analisar como a água é distribuída e movimentada na
+            camada superficial do solo, essa simulação desempenha um papel
+            crucial na compreensão dos processos hidrológicos e na gestão dos
+            recursos hídricos.
           </p>
         </div>
         <div id="importancia0">
