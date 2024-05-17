@@ -1,7 +1,7 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-
 import React from "react";
 import { Link } from "react-router-dom";
+import "./style.css";
 
 function Header() {
   return (
@@ -16,6 +16,9 @@ function Header() {
           </li>
           <li>
             <Link to="/simulacoes">Simulações</Link>
+          </li>
+          <li>
+            <Link to="/justificativa">justificativa</Link>
           </li>
         </ul>
       </div>
