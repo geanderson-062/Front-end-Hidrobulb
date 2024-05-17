@@ -1,6 +1,8 @@
 import React from "react";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import "materialize-css/dist/css/materialize.min.css";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import "./assets/index.css";
 import Home from "./pages/Home";
 import Simulacoes from "./pages/Simulacoes";
