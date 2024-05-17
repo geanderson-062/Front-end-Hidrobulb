@@ -83,11 +83,19 @@ function Footer() {
             <h5 className="white-text" style={{ marginTop: 10 }}>
               Apoiadores.
             </h5>
-            <p className="grey-text text-lighten-4">
+            <a
+              className="grey-text text-lighten-4"
+              href="https://www.facepe.br/"
+            >
               Financiador Facepe
-              <br></br>
+            </a>
+            <br />
+            <a
+              className="grey-text text-lighten-4"
+              href="https://www.ufpe.br/den"
+            >
               Apoiadores Den UFPE
-            </p>
+            </a>
           </div>
         </div>
       </div>
