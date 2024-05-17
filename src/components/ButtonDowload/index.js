@@ -6,7 +6,7 @@ function DownloadButton({ handleDownload }) {
       style={{ textAlign: "center", marginBottom: "50px", marginTop: "50px" }}
     >
       <button
-        className="btn waves-effect waves-light green"
+        className="btn waves-effect waves-light green text-white"
         onClick={handleDownload}
       >
         Baixar dados para Simulação.

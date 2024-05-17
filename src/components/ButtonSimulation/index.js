@@ -10,7 +10,7 @@ function SimulationButton({ handleSimulation }) {
 
   return (
     <button
-      className="btn waves-effect waves-light green"
+      className="btn waves-effect waves-light green text-white"
       onClick={handleClick}
     >
       {buttonText}

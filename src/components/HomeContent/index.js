@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import ScrollReveal from "scrollreveal";
+import RedirectButton from "../ButtonRedirect";
 import "./style.css";
 
 function BulboSimulacao() {
   useEffect(() => {
     const sr = ScrollReveal();
     sr.reveal(
-      "#introducao, #importancia0, #importancia1, #importancia2, #importancia3, #simulacao4, #importancia5, #importancia6, #importancia7 , #importancia8 , #importancia9, #metodologia, #regioes",
+      "#intro,#introducao, #importancia0, #importancia1, #importancia2, #importancia3, #simulacao4, #importancia5, #importancia6, #importancia7 , #importancia8 , #importancia9, #metodologia, #regioes",
       {
         delay: 0, // Atraso antes da animação começar em milissegundos
         duration: 1000, // Duração da animação em milissegundos
@@ -21,6 +22,17 @@ function BulboSimulacao() {
   return (
     <>
       <section className="container" id="container">
+        <div id="intro">
+          <RedirectButton />
+          <h4>
+            Obtenha dados para Simulações de Bulbo Úmido em Camada Superficial
+          </h4>
+          <p>
+            Leia o conteúdo abaixo para saber mais informações sobre as
+            simulações de Bulbo Úmido em Camada Superficial.
+          </p>
+        </div>
+
         <div id="introducao">
           <h4>Introdução a Simulação do Bulbo em Camada Superficial</h4>
           <p>

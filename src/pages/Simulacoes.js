@@ -15,8 +15,10 @@ function Simulacoes() {
 
   return (
     <>
-      <div id="selectorSimulationContainer">
-        <SelectorSimulation />
+      <div id="SimulacoesSontainer">
+        <div id="selectorSimulationContainer">
+          <SelectorSimulation />
+        </div>
       </div>
     </>
   );
