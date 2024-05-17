@@ -7,7 +7,7 @@ function RedirectButton() {
       style={{ textAlign: "center", marginBottom: "50px", marginTop: "50px" }}
     >
       <Link className="btn waves-effect waves-light green" to="/Simulacoes">
-        Realizar Simulações
+        Obter dados para Simulações.
       </Link>
     </div>
   );

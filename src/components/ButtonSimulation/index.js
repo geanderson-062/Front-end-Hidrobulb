@@ -1,10 +1,10 @@
 import React, { useState } from "react";
 
 function SimulationButton({ handleSimulation }) {
-  const [buttonText, setButtonText] = useState("Iniciar Simulação do Bulbo");
+  const [buttonText, setButtonText] = useState("Obter dados para Simulação.");
 
   const handleClick = () => {
-    setButtonText("Realizando simulação, aguarde...");
+    setButtonText("Obtendo dados, aguarde...");
     handleSimulation();
   };
 

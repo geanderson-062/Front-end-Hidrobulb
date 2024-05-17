@@ -4,41 +4,18 @@ import "./style.css";
 
 function BulboSimulacao() {
   useEffect(() => {
-    ScrollReveal().reveal("#introducao", {
-      origin: "right",
-      distance: "20px",
-      duration: 1000,
-      delay: 300,
-      easing: "cubic-bezier(0.5, 0, 0, 1)",
-    });
-    ScrollReveal().reveal("#importancia", {
-      origin: "right",
-      distance: "20px",
-      duration: 1000,
-      delay: 300,
-      easing: "cubic-bezier(0.5, 0, 0, 1)",
-    });
-    ScrollReveal().reveal("#simulacao", {
-      origin: "right",
-      distance: "20px",
-      duration: 1000,
-      delay: 300,
-      easing: "cubic-bezier(0.5, 0, 0, 1)",
-    });
-    ScrollReveal().reveal("#metodologia", {
-      origin: "right",
-      distance: "20px",
-      duration: 1000,
-      delay: 300,
-      easing: "cubic-bezier(0.5, 0, 0, 1)",
-    });
-    ScrollReveal().reveal("#regioes", {
-      origin: "right",
-      distance: "20px",
-      duration: 1000,
-      delay: 300,
-      easing: "cubic-bezier(0.5, 0, 0, 1)",
-    });
+    const sr = ScrollReveal();
+    sr.reveal(
+      "#introducao, #importancia0, #importancia1, #importancia2, #importancia3, #simulacao4, #importancia5, #importancia6, #importancia7 , #importancia8 , #importancia9, #metodologia, #regioes",
+      {
+        delay: 0, // Atraso antes da animação começar em milissegundos
+        duration: 1000, // Duração da animação em milissegundos
+        distance: "30px", // Distância que o elemento se moverá na animação
+        origin: "bottom", // Origem da animação (top, bottom, left, right)
+        easing: "ease-out", // Easing function para a animação (pode ser "linear", "ease-in", "ease-out", "ease-in-out")
+        reset: true, // Define se a animação deve ser refeita sempre que o elemento se tornar visível novamente
+      }
+    );
   }, []);
 
   return (
@@ -47,15 +24,24 @@ function BulboSimulacao() {
         <div id="introducao">
           <h4>Introdução a Simulação do Bulbo em Camada Superficial</h4>
           <p>
-            A Simulação do Bulbo em Camada Superficial é uma técnica avançada
-            que visa modelar a dinâmica da água na superfície do solo. Ao
-            analisar como a água é distribuída e movimentada na camada
-            superficial do solo, essa simulação desempenha um papel crucial na
-            compreensão dos processos hidrológicos e na gestão dos recursos
-            hídricos.
+            O “bulbo úmido” é uma região no solo que se forma ao redor de um
+            ponto de emissão de água, como um gotejador em um sistema de
+            irrigação por gotejamento. Esta região é chamada de “bulbo” devido à
+            sua forma esférica ou ovalada que se forma devido à movimentação da
+            água através do solo1. A água se move para fora do ponto de emissão
+            em todas as direções, criando uma zona úmida que se assemelha a um
+            bulbo. A forma e o tamanho do bulbo úmido podem variar dependendo de
+            vários fatores, incluindo as propriedades do solo (como a textura e
+            a condutividade hidráulica), a taxa de aplicação de água e o tempo
+            de irrigação1. A simulação do bulbo úmido em camada superficial é
+            uma técnica avançada que visa modelar a dinâmica da água na
+            superfície do solo. Ao analisar como a água é distribuída e
+            movimentada na camada superficial do solo, essa simulação desempenha
+            um papel crucial na compreensão dos processos hidrológicos e na
+            gestão dos recursos hídricos1.
           </p>
         </div>
-        <div id="importancia">
+        <div id="importancia0">
           <h4>Importância das simulações</h4>
           <img
             src="https://agrosmart.com.br/blog/wp-content/uploads/2022/05/pivo-irrigacao.png"
@@ -69,6 +55,8 @@ function BulboSimulacao() {
               uniforme e eficiente da água, melhorando assim o crescimento das
               plantas e a produtividade agrícola.
             </p>
+          </div>
+          <div id="importancia1">
             <strong>Previsão de Inundações e Secas:</strong>
             <p>
               A capacidade de prever eventos extremos, como inundações e secas,
@@ -77,6 +65,8 @@ function BulboSimulacao() {
               sobre a disponibilidade de água no solo, permitindo medidas
               preventivas e ações de mitigação.
             </p>
+          </div>
+          <div id="importancia2">
             <strong>Planejamento Urbano e Ambiental:</strong>
             <p>
               Em áreas urbanas, entender como a água se infiltra no solo é
@@ -86,12 +76,14 @@ function BulboSimulacao() {
               garantindo uma gestão sustentável dos recursos hídricos.
             </p>
           </div>
-          <h4>Informações Necessárias para a Simulação</h4>
-          <img
-            src="https://sqm-vitas.com.br/wp-content/uploads/2020/11/30883A-8-formacao-bulbo.png"
-            alt="Bulbo"
-          />
-          <div>
+        </div>
+        <h4>Informações Necessárias para a Simulação</h4>
+        <img
+          src="https://sqm-vitas.com.br/wp-content/uploads/2020/11/30883A-8-formacao-bulbo.png"
+          alt="Bulbo"
+        />
+        <div>
+          <div id="importancia3">
             <strong>Propriedades do Solo: </strong>
             <p>
               A textura do solo influencia diretamente na capacidade de
@@ -100,6 +92,8 @@ function BulboSimulacao() {
               permanente são essenciais para modelar com precisão o
               comportamento hidrológico do solo.
             </p>
+          </div>
+          <div id="importancia4">
             <strong>Condições Iniciais do Solo: </strong>
             <p>
               Definir a umidade inicial do solo e a concentração inicial de
@@ -107,6 +101,8 @@ function BulboSimulacao() {
               Essas condições fornecem uma base sólida para o desenvolvimento do
               modelo e garantem resultados mais precisos e confiáveis.
             </p>
+          </div>
+          <div id="importancia5">
             <strong>Condições de Contorno:</strong>
             <p>
               As condições de contorno, como fluxo de água na superfície do
@@ -115,6 +111,8 @@ function BulboSimulacao() {
               condições é fundamental para capturar com precisão os processos
               hidrológicos na simulação.
             </p>
+          </div>
+          <div id="importancia6">
             <strong>Parâmetros Climáticos:</strong>
             <p>
               Variáveis climáticas, como temperatura, umidade relativa,
@@ -123,6 +121,8 @@ function BulboSimulacao() {
               dados climáticos é essencial para tornar a simulação mais realista
               e precisa.
             </p>
+          </div>
+          <div id="importancia7">
             <strong>Geometria do Domínio: </strong>
             <p>
               A geometria do domínio define a extensão espacial da simulação,
@@ -131,6 +131,8 @@ function BulboSimulacao() {
               de água com precisão, garantindo que a simulação seja
               representativa do ambiente real.
             </p>
+          </div>
+          <div id="importancia8">
             <strong>Intervalo de Tempo:</strong>
             <p>
               O intervalo de tempo utilizado na simulação determina a resolução
@@ -138,6 +140,8 @@ function BulboSimulacao() {
               capturar mudanças rápidas no sistema e garantir resultados
               precisos ao longo do tempo.
             </p>
+          </div>
+          <div id="importancia9">
             <strong>Condições de Saturação e Drenagem: </strong>
             <p>
               Descrever como a água é movimentada no solo, incluindo o estado de
