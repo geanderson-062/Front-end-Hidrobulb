@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { fetchData } from "../../services/BulboSuperficial_backend";
 import SimulationButton from "../ButtonSimulation";
 import ResultSimulation from "../ResultSimulation";
+import DownloadButton from "../ButtonDowload";
 
 function CentroOeste() {
   const [soilTexture, setSoilTexture] = useState(null);
@@ -66,6 +67,43 @@ function CentroOeste() {
     }
   };
 
+  const handleDownload = () => {
+    const now = new Date();
+    const formattedDate = now.toLocaleString();
+    const data = `
+    Dados para Simulação de bulbo umido na região Centro-Oeste.
+    Soil Texture: ${soilTexture}
+    Hydraulic Conductivity: ${hydraulicConductivity}
+    Porosity: ${porosity}
+    Field Capacity: ${fieldCapacity}
+    Wilting Point: ${wiltingPoint}
+    Initial Moisture: ${initialMoisture}
+    Solute Concentration: ${soluteConcentration}
+    Surface Water Flow: ${surfaceWaterFlow}
+    Evaporation Rate: ${evaporationRate}
+    Precipitation: ${precipitation}
+    Temperature: ${temperature}
+    Humidity: ${humidity}
+    Wind Speed: ${windSpeed}
+    Radiation: ${radiation}
+    Surface Area: ${surfaceArea}
+    Soil Thickness: ${soilThickness}
+    Time Interval: ${timeInterval}
+    Saturation: ${saturation}
+    Drainage: ${drainage}
+    Dados fornecidos pelo sistema HydroBulb em: ${formattedDate}
+    `;
+
+    const blob = new Blob([data], { type: "text/plain" });
+    const url = window.URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "dados_para`_simulacao_de_bulbo_umido_no_Centro_Oeste";
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  };
+
   return (
     <div className="container">
       <h2 className="header center-align">Simulação da Região Centro Oeste</h2>
@@ -97,6 +135,7 @@ function CentroOeste() {
         saturation={saturation}
         drainage={drainage}
       />
+      {soilTexture && <DownloadButton handleDownload={handleDownload} />}
     </div>
   );
 }
